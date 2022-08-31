@@ -1,0 +1,11 @@
+.ui-pointer {
+  cursor: pointer;
+}
+
+.ui-ellipsis {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

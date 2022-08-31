@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), url(./assets/fonts/icons/MaterialIcons-Regular.ttf) format("truetype");
+  src: local('./assets/fonts/icons/Material Icons'),
+  local('./assets/fonts/icons/MaterialIcons-Regular'),
+  url(./assets/fonts/icons/MaterialIcons-Regular.woff2) format('woff2'),
+  url(./assets/fonts/icons/MaterialIcons-Regular.woff) format('woff'),
+  url(./assets/fonts/icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+//@import "../../../libs/ui/src/styles/import";
+//@import "../../../libs/ui/src/styles/index";

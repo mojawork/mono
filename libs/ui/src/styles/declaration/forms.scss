@@ -1,0 +1,113 @@
+
+$time: 0.5s;
+$inputMinSize: 4rem;
+// ----------------------------------------------------------------------------
+
+body {
+
+
+
+  input, select, button, textarea, .editor {
+    display: flex;
+    align-items: center;
+    border-radius: $border-radius;
+    padding: $spacer * 0.125;
+    background-color: var(--ui-cb-main);
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    &:focus {
+      @include ui-mixin-focus;
+    }
+  }
+
+  input, select, textarea {
+    border: $border-width solid var(--ui-cb-thirdly);
+
+    &.error {
+      border-color: var(--c-error);
+      border-width: $border-width *2;
+    }
+  }
+
+  input:disabled {
+    background-color: var(--c-disabeld);
+    color: var(--ui-ct-secondary);
+    cursor: default;
+  }
+
+
+  button {
+    font-weight: $font-weight-bold;
+    color: var(--ui-ct-secondary);
+    background-color: var(--ui-cb-secondary);
+    border: $border-width solid transparent;
+    box-shadow: 0 0 $button-shadow 0 var(--ui-ct-secondary);
+
+    &:active {
+      box-shadow: 0 0 0 0;
+    }
+
+    &.text-icon-g {
+      padding: 0;
+      padding-left: $spacer * 0.125;
+    }
+
+    .icons-g {
+      color: var(--ui-ct-secondary);
+      padding: 0;
+
+    }
+  }
+
+  button.icons-g {
+    padding: 0;
+  }
+
+  button.success-g {
+    color: var(--ui-ct-invert);
+    background-color: var(--c-success);
+    box-shadow: 0 0 $button-shadow 0 var(--c-success);
+
+    .icons-g {
+      color: var(--ui-ct-invert);
+    }
+  }
+
+  button.focus-g {
+    color: var(--ui-ct-invert);
+    background-color: var(--c-focus);
+    box-shadow: 0 0 $button-shadow 0 var(--c-focus);
+
+    .icons-g {
+      color: var(--ui-ct-invert);
+    }
+  }
+
+  button.danger-g {
+    color: var(--ui-ct-invert);
+    background-color: var(--c-error);
+    box-shadow: 0 0 $button-shadow 0 var(--c-error);
+
+    .icons-g {
+      color: var(--ui-ct-invert);
+    }
+  }
+
+  button.warning-g {
+    color: var(--ui-ct-invert);
+    background-color: var(--c-warning);
+    box-shadow: 0 0 $button-shadow 0 var(--c-warning);
+
+    .icons-g {
+      color: var(--ui-ct-invert);
+    }
+  }
+
+  button:disabled {
+    background-color: var(--c-disabeld);
+    color: var(--ui-ct-secondary);
+    cursor: default;
+  }
+
+}

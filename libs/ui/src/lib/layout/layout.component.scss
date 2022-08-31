@@ -1,0 +1,62 @@
+@import "../../styles/import";
+
+.ui-layout {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  padding: 0;
+  border-top: 0;
+  border-bottom: 0;
+  overflow: auto;
+  border-left: $border-width solid var(--ui-cb-thirdly);
+  border-right: $border-width solid var(--ui-cb-thirdly);
+
+  > header {
+    flex: 0 0;
+    padding: $spacer * 0.5;
+    background-color: var(--ui-cb-primary);
+  }
+
+  > main {
+    flex: 1 1;
+    padding: $spacer * 0.5;
+    grid-gap: $spacer * 0.5;
+    background-color: var(--ui-cb-secondary);
+  }
+
+  > footer {
+    flex: 0 0;
+    padding: $spacer * 0.5;
+    background-color: var(--ui-cb-primary);
+  }
+
+  //--- mediascreen 1 ---
+  @include mediascreen($mediascreen: 'ms1') {
+    @include ui-mixin-layout($mediascreen: 'ms1');
+  }
+  //--- mediascreen 2 ---
+  @include mediascreen($mediascreen: 'ms2') {
+    @include ui-mixin-layout($mediascreen: 'ms2');
+  }
+  //--- mediascreen 3 ---
+  @include mediascreen($mediascreen: 'ms3') {
+    @include ui-mixin-layout($mediascreen: 'ms3');
+  }
+  //--- mediascreen 4 ---
+  @include mediascreen($mediascreen: 'ms4') {
+    transition: $time ease-in-out;
+    @include ui-mixin-layout($mediascreen: 'ms4');
+  }
+  //--- mediascreen 5 ---
+  @include mediascreen($mediascreen: 'ms5') {
+    transition: $time ease-in-out;
+    @include ui-mixin-layout($mediascreen: 'ms5');
+  }
+  //--- mediascreen 6 ---
+  @include mediascreen($mediascreen: 'ms6') {
+    transition: $time ease-in-out;
+    @include ui-mixin-layout($mediascreen: 'ms6');
+  }
+}

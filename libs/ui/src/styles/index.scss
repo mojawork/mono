@@ -1,0 +1,55 @@
+// ----------------------------------------------------------------------------
+// Config
+@import "import";
+@import "config/colors";
+@import "mixin/global";
+@import "mixin/mediascreen";
+// ----------------------------------------------------------------------------
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: $global-font-size;
+  background-color: var(--ui-cb-main);
+}
+
+body {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  *, ::before, ::after {
+    font-style: $global-font-style;
+    font-family: $global-font-family;
+    font-weight: $global-font-weight;
+    text-decoration: $global-text-decoration;
+    letter-spacing: $global-letter-spacing;
+    color: var(--ui-ct-primary);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  /*
+    div, article, section, figure {
+      display: flex;
+      box-sizing: border-box;
+    }
+  */
+}
+
+// ----------------------------------------------------------------------------
+// imports declaration
+@import "declaration/fonts";
+@import "declaration/animation";
+@import "declaration/colors";
+@import "declaration/tags";
+@import "declaration/forms";
+@import "declaration/icons";
+@import "declaration/classes";
+// ----------------------------------------------------------------------------

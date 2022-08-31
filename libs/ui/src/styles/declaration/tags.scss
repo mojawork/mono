@@ -1,0 +1,97 @@
+
+hr {
+  display: flex;
+  width: 100%;
+  border-bottom: $border-width solid var(--ui-cb-thirdly);
+  margin-top: $spacer * 0.25;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: $spacer * 0.25;
+}
+
+h1, h2, h3 {
+  margin-bottom: $spacer * 0.25;
+  font-weight: $font-weight-bold;
+}
+
+h4, h5, h6 {
+  margin-bottom: $spacer * 0.125;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+ul {
+  padding-left: $spacer * 0.325;
+  margin-bottom: $spacer * 0.25;
+}
+
+ol {
+  padding-left: $spacer * 0.55;
+  margin-bottom: $spacer * 0.25;
+}
+
+li {
+
+  margin-bottom: $spacer * 0.125;
+}
+
+table {
+  border-collapse: collapse;
+
+  th {
+    background-color: var(--ui-cb-primary);
+    color: var(--ui-ct-invert);
+    font-weight: bold;
+  }
+
+  th, td {
+    text-align: left;
+    border: $border-width solid var(--ui-cb-thirdly);
+    padding: $spacer * 0.25;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--ui-cb-secondary);
+  border: $border-width solid var(--ui-cb-thirdly);
+  border-radius: $border-radius;
+  margin: 0;
+  padding: $spacer * 0.25;
+  padding-top: $spacer;
+
+  legend {
+    padding: $spacer * 0.25;
+    color: var(--ui-ct-invert);
+    background-color: var(--ui-cb-primary);
+    border: $border-width solid var(--ui-cb-thirdly);
+    border-radius: $border-radius;
+    font-weight: bold;
+  }
+}
+
+figure {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--ui-cb-thirdly);
+  border: $border-width solid var(--ui-cb-thirdly);
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  figcaption {
+    position: absolute;
+    right: - $border-width;
+    bottom: - $border-width;
+    background-color: var(--ui-cb-primary);
+    color: var(--ui-ct-invert);
+    padding: $spacer * 0.25;
+    min-width: 80%;
+    border: $border-width solid var(--ui-cb-thirdly);
+    border-bottom-right-radius: $border-radius;
+    font-weight:bold;
+  }
+}
