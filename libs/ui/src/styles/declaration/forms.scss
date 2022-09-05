@@ -1,11 +1,7 @@
-
 $time: 0.5s;
 $inputMinSize: 4rem;
 // ----------------------------------------------------------------------------
-
 body {
-
-
 
   input, select, button, textarea, .editor {
     display: flex;
@@ -25,13 +21,13 @@ body {
     border: $border-width solid var(--ui-cb-thirdly);
 
     &.error {
-      border-color: var(--c-error);
+      border-color: var(--ui-c-error);
       border-width: $border-width *2;
     }
   }
 
   input:disabled {
-    background-color: var(--c-disabeld);
+    background-color: var(--ui-c-disabeld);
     color: var(--ui-ct-secondary);
     cursor: default;
   }
@@ -66,8 +62,8 @@ body {
 
   button.success-g {
     color: var(--ui-ct-invert);
-    background-color: var(--c-success);
-    box-shadow: 0 0 $button-shadow 0 var(--c-success);
+    background-color: var(--ui-c-success);
+    box-shadow: 0 0 $button-shadow 0 var(--ui-c-success);
 
     .icons-g {
       color: var(--ui-ct-invert);
@@ -76,8 +72,8 @@ body {
 
   button.focus-g {
     color: var(--ui-ct-invert);
-    background-color: var(--c-focus);
-    box-shadow: 0 0 $button-shadow 0 var(--c-focus);
+    background-color: var(--ui-c-focus);
+    box-shadow: 0 0 $button-shadow 0 var(--ui-c-focus);
 
     .icons-g {
       color: var(--ui-ct-invert);
@@ -86,8 +82,8 @@ body {
 
   button.danger-g {
     color: var(--ui-ct-invert);
-    background-color: var(--c-error);
-    box-shadow: 0 0 $button-shadow 0 var(--c-error);
+    background-color: var(--ui-c-error);
+    box-shadow: 0 0 $button-shadow 0 var(--ui-c-error);
 
     .icons-g {
       color: var(--ui-ct-invert);
@@ -96,8 +92,8 @@ body {
 
   button.warning-g {
     color: var(--ui-ct-invert);
-    background-color: var(--c-warning);
-    box-shadow: 0 0 $button-shadow 0 var(--c-warning);
+    background-color: var(--ui-c-warning);
+    box-shadow: 0 0 $button-shadow 0 var(--ui-c-warning);
 
     .icons-g {
       color: var(--ui-ct-invert);
@@ -105,9 +101,10 @@ body {
   }
 
   button:disabled {
-    background-color: var(--c-disabeld);
+    background-color: var(--ui-c-disabeld);
     color: var(--ui-ct-secondary);
     cursor: default;
   }
+
 
 }

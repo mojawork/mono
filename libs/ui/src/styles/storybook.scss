@@ -1,0 +1,19 @@
+@import 'index';
+
+.ui-storybook {
+  section.internal {
+    display: flex;
+    flex-flow: column;
+    padding: $spacer * 0.5;
+  }
+
+  .float {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+    > * {
+      margin-right: $spacer * 0.5;
+    }
+  }
+}

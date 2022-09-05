@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'mojawork-ui-layout',
@@ -6,13 +6,4 @@ import {Component, ViewEncapsulation} from '@angular/core';
   styleUrls: ['./layout.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class UiLayoutComponent {
-}
-
-/*
-
-
-@import "../../../libs/ui/src/styles/import";
-@import "../../../libs/ui/src/styles/index";
-
- */
+export class UiLayoutComponent {}

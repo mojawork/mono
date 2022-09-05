@@ -1,13 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mojawork-tags',
+  selector: 'mojawork-ui-examples-tags',
   templateUrl: './tags.component.html',
-  styleUrls: ['./tags.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated,
 })
-export class TagsComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class UiTagsExamplesComponent {}

@@ -24,7 +24,7 @@
         "configDir": "libs/ui/.storybook",
         "browserTarget": "ui:build-storybook",
         "compodoc": false,
-        "styles": ["libs/ui/src/styles/index.scss"]
+        "styles": ["libs/ui/src/styles/storybook.scss"]
       },
       "configurations": {
         "ci": {

@@ -25,6 +25,7 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "@nrwl/angular": "14.5.10",
+
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -50,6 +51,7 @@
     "@nrwl/storybook": "14.5.10",
     "@nrwl/workspace": "14.5.10",
     "@storybook/addon-essentials": "~6.5.9",
+    "@storybook/addon-notes": "^5.3.21",
     "@storybook/angular": "~6.5.9",
     "@storybook/builder-webpack5": "~6.5.9",
     "@storybook/core-server": "~6.5.9",

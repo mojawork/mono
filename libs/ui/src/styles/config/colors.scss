@@ -1,4 +1,3 @@
-
 // copy and overwrite classes in your apps [styles.scss]
 
 // ----------------------------------------------------------------------------
@@ -6,18 +5,19 @@
 // ----------------------------------------------------------------------------
 
 body {
-  --c-success: #28a745;
-  --c-error: #b60202;
-  --c-warning: #ffc107;
-  --c-focus: #049ae2;
-  --c-disabeld: #cccccc;
+  --ui-c-success: #28a745;
+  --ui-c-error: #b60202;
+  --ui-c-warning: #ffc107;
+  --ui-c-focus: #049ae2;
+  --ui-c-disabeld: #cccccc;
+  --ui-c-action: #ffffff;
 }
 
 // ----------------------------------------------------------------------------
 // theme-light
 // ----------------------------------------------------------------------------
-body, body.theme-light {
-
+body,
+body.theme-light {
   --ui-ct-primary: #333333;
   --ui-ct-secondary: #848484;
   --ui-ct-invert: #ffffff;
@@ -28,7 +28,8 @@ body, body.theme-light {
   --ui-cbt-primary: rgba(221, 221, 221, 0.9);
   --ui-cbt-secondary: rgba(230, 230, 230, 0.8);
   --ui-cbt-thirdly: rgba(239, 239, 239, 0.8);
-  --ui-cs-overlay: 2px 5px 16px 0px #333333, 5px 5px 15px 5px rgba(0,0,0,0);
+
+  --ui-cs-overlay: 2px 5px 16px 0px #333333, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 // ----------------------------------------------------------------------------
@@ -46,6 +47,5 @@ body.theme-dark {
   --ui-cbt-primary: rgba(51, 51, 51, 0.8);
   --ui-cbt-secondary: rgba(75, 75, 75, 0.8);
   --ui-cbt-thirdly: rgba(102, 102, 102, 0.8);
-  --ui-cs-overlay: 2px 5px 16px 0px #efefef, 5px 5px 15px 5px rgba(0,0,0,0);
+  --ui-cs-overlay: 2px 5px 16px 0px #efefef, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-

@@ -1,87 +1,94 @@
 // ----------------------------------------------------------------------------
 // text
 // ----------------------------------------------------------------------------
+body {
+  .ui-ct-primary {
+    color: var(--ui-ct-primary);
+  }
 
-.ui-ct-primary {
-  color: var(--ui-ct-primary)
-}
+  .ui-ct-secondary {
+    color: var(--ui-ct-secondary);
+  }
 
-.ui-ct-secondary {
-  color: var(--ui-ct-secondary)
-}
+  .ui-ct-invert {
+    color: var(--ui-ct-invert);
+  }
 
-.ui-ct-light {
-  color: var(--ui-ct-invert)
-}
+  .ui-ct-action {
+    color: var(--ui-c-action);
+  }
 
-.ui-ct-success {
-  color: var(--c-success)
-}
+  .ui-ct-success {
+    color: var(--ui-c-success);
+  }
 
-.ui-ct-error {
-  color: var(--c-error)
-}
+  .ui-ct-error {
+    color: var(--ui-c-error);
+  }
 
-.ui-ct-warning {
-  color: var(--c-warning)
-}
+  .ui-ct-warning {
+    color: var(--ui-c-warning);
+  }
 
-.ui-ct-focus {
-  color: var(--c-focus)
+  .ui-ct-focus {
+    color: var(--ui-c-focus);
+  }
 }
 
 // ----------------------------------------------------------------------------
 // background
 // ----------------------------------------------------------------------------
+body {
+  .ui-cb-primary {
+    background-color: var(--ui-cb-primary);
+  }
 
-.ui-cb-primary {
-  background-color: var(--ui-cb-primary)
-}
+  .ui-cb-secondary {
+    background-color: var(--ui-cb-secondary);
+  }
 
-.ui-cb-secondary {
-  background-color: var(--ui-cb-secondary)
-}
+  .ui-cb-thirdly {
+    background-color: var(--ui-cb-thirdly);
+  }
 
-.ui-cb-thirdly {
-  background-color: var(--ui-cb-thirdly)
-}
+  .ui-cb-main {
+    background-color: var(--ui-cb-main);
+  }
 
-.ui-cb-main {
-  background-color: var(--ui-cb-main)
-}
+  .ui-cb-success {
+    background-color: var(--ui-c-success);
+  }
 
-.ui-cbt-primary {
-  background-color: var(--ui-cb-primary)
-}
+  .ui-cb-error {
+    background-color: var(--ui-c-error);
+  }
 
-.ui-cbt-secondary {
-  background-color: var(--ui-cb-secondary)
-}
+  .ui-cb-warning {
+    background-color: var(--ui-c-warning);
+  }
 
-.ui-cbt-thirdly {
-  background-color: var(--ui-cb-thirdly)
-}
+  .ui-cb-focus {
+    background-color: var(--ui-c-focus);
+  }
 
-.ui-cb-success {
-  background-color: var(--c-success)
-}
+  .ui-cbt-primary {
+    background-color: var(--ui-cbt-primary);
+  }
 
-.ui-cb-error {
-  background-color: var(--c-error)
-}
+  .ui-cbt-secondary {
+    background-color: var(--ui-cbt-secondary);
+  }
 
-.ui-cb-warning {
-  background-color: var(--c-warning)
-}
-
-.ui-cb-focus {
-  background-color: var(--c-focus)
+  .ui-cbt-thirdly {
+    background-color: var(--ui-cbt-thirdly);
+  }
 }
 
 // ----------------------------------------------------------------------------
 // shadows
 // ----------------------------------------------------------------------------
-
-.ui-cs-overlay {
-  background-color: var(--ui-cs-overlay)
+body {
+  .ui-cs-overlay {
+    box-shadow: var(--ui-cs-overlay);
+  }
 }

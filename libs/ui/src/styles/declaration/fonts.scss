@@ -35,8 +35,8 @@ body {
       font-size: $font-size-6 * $font-mobile-factor;
       line-height: $line-height-6 * $font-mobile-factor;
     }
-    .icons-g {
-      font-size: $font-size-button * $font-mobile-factor;
+    .ui-icon {
+      font-size: $icon-size * $font-mobile-factor;
     }
 
   }
@@ -74,8 +74,8 @@ body {
     em {
       font-style: italic;
     }
-    .icons-g {
-      font-size: $font-size-button * $font-desktop-factor;
+    .ui-icon {
+      font-size: $icon-size * $font-desktop-factor;
     }
   }
 }
