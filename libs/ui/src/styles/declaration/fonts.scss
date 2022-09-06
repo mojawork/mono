@@ -1,5 +1,7 @@
-
 body {
+  em {
+    font-style: italic;
+  }
 
   strong > em {
     font-weight: bold;
@@ -15,30 +17,35 @@ body {
       font-size: $font-size-0 * $font-mobile-factor;
       line-height: $line-height-0 * $font-mobile-factor;
     }
-    h1, .h1-g {
+    h1,
+    .h1-g {
       font-size: $font-size-1 * $font-mobile-factor;
       line-height: $line-height-1 * $font-mobile-factor;
     }
-    h2, .h2-g {
+    h2,
+    .h2-g {
       font-size: $font-size-2 * $font-mobile-factor;
       line-height: $line-height-2 * $font-mobile-factor;
     }
-    h3, .h3-g {
+    h3,
+    .h3-g {
       font-size: $font-size-3 * $font-mobile-factor;
       line-height: $line-height-3 * $font-mobile-factor;
     }
-    h4, .h4-g, strong {
+    h4,
+    .h4-g,
+    strong {
       font-size: $font-size-4 * $font-mobile-factor;
       line-height: $line-height-4 * $font-mobile-factor;
     }
-    small, .small {
+    small,
+    .small {
       font-size: $font-size-6 * $font-mobile-factor;
       line-height: $line-height-6 * $font-mobile-factor;
     }
     .ui-icon {
       font-size: $icon-size * $font-mobile-factor;
     }
-
   }
 
   // --- mediascreen 04 - 06 ---
@@ -51,28 +58,31 @@ body {
       font-size: $font-size-0 * $font-desktop-factor;
       line-height: $line-height-0 * $font-desktop-factor;
     }
-    h1, .h1-g {
+    h1,
+    .h1-g {
       font-size: $font-size-1 * $font-desktop-factor;
       line-height: $line-height-1 * $font-desktop-factor;
     }
-    h2, .h2-g {
+    h2,
+    .h2-g {
       font-size: $font-size-2 * $font-desktop-factor;
       line-height: $line-height-2 * $font-desktop-factor;
     }
-    h3, .h3-g {
+    h3,
+    .h3-g {
       font-size: $font-size-3 * $font-desktop-factor;
       line-height: $line-height-3 * $font-desktop-factor;
     }
-    h4, .h4-g, strong, em {
+    h4,
+    .h4-g,
+    strong {
       font-size: $font-size-4 * $font-desktop-factor;
       line-height: $line-height-4 * $font-desktop-factor;
     }
-    small, .small {
+    small,
+    .small {
       font-size: $font-size-6 * $font-desktop-factor;
       line-height: $line-height-6 * $font-desktop-factor;
-    }
-    em {
-      font-style: italic;
     }
     .ui-icon {
       font-size: $icon-size * $font-desktop-factor;

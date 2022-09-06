@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
   selector: 'mojawork-ui-examples-tags',
   templateUrl: './tags.component.html',
 })
-export class UiTagsExamplesComponent {}
+export class UiExampleStylingTagsComponent {}

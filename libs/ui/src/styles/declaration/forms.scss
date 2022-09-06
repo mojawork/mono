@@ -2,36 +2,51 @@ $time: 0.5s;
 $inputMinSize: 4rem;
 // ----------------------------------------------------------------------------
 body {
-
-  input, select, button, textarea, .editor {
+  input,
+  select,
+  button,
+  textarea {
     display: flex;
     align-items: center;
     border-radius: $border-radius;
     padding: $spacer * 0.125;
     background-color: var(--ui-cb-main);
     cursor: pointer;
-    -webkit-appearance: none;
 
     &:focus {
       @include ui-mixin-focus;
     }
   }
 
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     border: $border-width solid var(--ui-cb-thirdly);
 
     &.error {
       border-color: var(--ui-c-error);
-      border-width: $border-width *2;
+      border-width: $border-width * 2;
     }
   }
 
-  input:disabled {
+  input:disabled,
+  textarea:disabled {
     background-color: var(--ui-c-disabeld);
     color: var(--ui-ct-secondary);
     cursor: default;
   }
 
+  input[type='file'] {
+    border: 0;
+    &::file-selector-button {
+      margin-right: $spacer * 0.125;
+      font-weight: $font-weight-bold;
+      color: var(--ui-ct-secondary);
+      background-color: var(--ui-cb-secondary);
+      border: $border-width solid var(--ui-cb-thirdly);
+      border-radius: $border-radius;
+    }
+  }
 
   button {
     font-weight: $font-weight-bold;
@@ -43,68 +58,32 @@ body {
     &:active {
       box-shadow: 0 0 0 0;
     }
-
-    &.text-icon-g {
-      padding: 0;
-      padding-left: $spacer * 0.125;
-    }
-
-    .icons-g {
-      color: var(--ui-ct-secondary);
-      padding: 0;
-
-    }
   }
 
-  button.icons-g {
-    padding: 0;
-  }
-
-  button.success-g {
+  button.ui-success {
     color: var(--ui-ct-invert);
     background-color: var(--ui-c-success);
-    box-shadow: 0 0 $button-shadow 0 var(--ui-c-success);
-
-    .icons-g {
-      color: var(--ui-ct-invert);
-    }
   }
 
-  button.focus-g {
+  button.ui-focus {
     color: var(--ui-ct-invert);
     background-color: var(--ui-c-focus);
-    box-shadow: 0 0 $button-shadow 0 var(--ui-c-focus);
-
-    .icons-g {
-      color: var(--ui-ct-invert);
-    }
   }
 
-  button.danger-g {
+  button.ui-danger {
     color: var(--ui-ct-invert);
     background-color: var(--ui-c-error);
-    box-shadow: 0 0 $button-shadow 0 var(--ui-c-error);
-
-    .icons-g {
-      color: var(--ui-ct-invert);
-    }
   }
 
-  button.warning-g {
+  button.ui-warning {
     color: var(--ui-ct-invert);
     background-color: var(--ui-c-warning);
-    box-shadow: 0 0 $button-shadow 0 var(--ui-c-warning);
-
-    .icons-g {
-      color: var(--ui-ct-invert);
-    }
   }
 
   button:disabled {
     background-color: var(--ui-c-disabeld);
-    color: var(--ui-ct-secondary);
+    color: var(--ui-ct-disabeld);
     cursor: default;
+    box-shadow: 0 0 0 0;
   }
-
-
 }
