@@ -5,7 +5,8 @@ import { UiLayoutComponent } from './layout/layout.component';
 import { UiCodeComponent } from './atoms/code/code.component';
 import { UiTagsExamplesComponent } from './examples/tags/tags.component';
 import { UiColorsExamplesComponent } from './examples/colors/colors.component';
-import { UIExamplesIconsComponent } from './examples/icons/icons.component';
+import { UiExamplesIconsComponent } from './examples/icons/icons.component';
+import { UiInternHeaderComponent } from './intern/header/header.component';
 
 @NgModule({
   imports: [CommonModule],
@@ -14,7 +15,8 @@ import { UIExamplesIconsComponent } from './examples/icons/icons.component';
     UiTagsExamplesComponent,
     UiColorsExamplesComponent,
     UiCodeComponent,
-    UIExamplesIconsComponent,
+    UiExamplesIconsComponent,
+    UiInternHeaderComponent,
   ],
   exports: [UiLayoutComponent, UiCodeComponent],
 })

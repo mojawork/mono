@@ -1,22 +1,25 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import markdown from './icons.md';
-import { UIExamplesIconsComponent } from './icons.component';
+import { UiExamplesIconsComponent } from './icons.component';
+import { UiColorsExamplesComponent } from '../colors/colors.component';
+import { UiInternHeaderComponent } from '../../intern/header/header.component';
 
 export default {
   title: 'Examples',
-  component: UIExamplesIconsComponent,
+  component: UiExamplesIconsComponent,
   parameters: {
     notes: markdown,
   },
   decorators: [
     moduleMetadata({
+      declarations: [UiColorsExamplesComponent, UiInternHeaderComponent],
       imports: [],
     }),
   ],
-} as Meta<UIExamplesIconsComponent>;
+} as Meta<UiExamplesIconsComponent>;
 
-const Template: Story<UIExamplesIconsComponent> = (
-  args: UIExamplesIconsComponent
+const Template: Story<UiExamplesIconsComponent> = (
+  args: UiExamplesIconsComponent
 ) => ({
   props: args,
 });

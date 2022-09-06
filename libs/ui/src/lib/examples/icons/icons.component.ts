@@ -6,4 +6,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./icons.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class UIExamplesIconsComponent {}
+export class UiExamplesIconsComponent {}

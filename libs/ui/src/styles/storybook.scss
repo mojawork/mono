@@ -1,9 +1,20 @@
 @import 'index';
 
 .ui-storybook {
+  // reset sb (storybook) styles
+  &.sb-main-padded,
+  &.sb-show-main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header.internal {
+    //padding: $spacer * 0.5;
+  }
   section.internal {
     display: flex;
     flex-flow: column;
+    margin: $spacer * 0.5;
     padding: $spacer * 0.5;
   }
 

@@ -1,0 +1,19 @@
+@import '../../../styles/import';
+
+header {
+  display: flex;
+  flex-flow: column;
+  position: sticky;
+  top: 0;
+  border-bottom: $border-width solid var(--ui-cb-thirdly);
+  div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: var(--ui-cb-secondary);
+    padding: $spacer * 0.5;
+    > * {
+      margin-right: $spacer * 0.5;
+    }
+  }
+}

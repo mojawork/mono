@@ -1,11 +1,11 @@
-@import "../../../styles/import";
+@import '../../../styles/import';
 
 div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: $spacer *0.5;
+  grid-gap: $spacer * 0.5;
   > * {
-    border: $border-width solid var(--ui-cb-primary);
+    border: $border-width solid var(--ui-cb-thirdly);
     padding: $spacer * 0.25;
   }
 }

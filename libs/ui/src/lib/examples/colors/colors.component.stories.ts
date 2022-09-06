@@ -1,15 +1,18 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { UiColorsExamplesComponent } from './colors.component';
 import markdown from './colors.md';
+import { UiInternHeaderComponent } from '../../intern/header/header.component';
 
 export default {
   title: 'Examples',
   component: UiColorsExamplesComponent,
+
   parameters: {
     notes: markdown,
   },
   decorators: [
     moduleMetadata({
+      declarations: [UiColorsExamplesComponent, UiInternHeaderComponent],
       imports: [],
     }),
   ],
