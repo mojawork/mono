@@ -1,15 +1,14 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import {UiLayoutComponent} from "./layout.component";
-
+import { UiLayoutMainComponent } from './main.component';
 
 export default {
   title: 'Layout',
-  component: UiLayoutComponent,
+  component: UiLayoutMainComponent,
   parameters: {
     componentSubtitle: 'Layout Component.',
     docs: {
       page: null,
-      iframeHeight: 400
+      iframeHeight: 400,
     },
   },
   decorators: [
@@ -17,18 +16,19 @@ export default {
       imports: [],
     }),
   ],
-} as Meta<UiLayoutComponent>;
+} as Meta<UiLayoutMainComponent>;
 
-const Template: Story<UiLayoutComponent> = (args: UiLayoutComponent) => ({
+const Template: Story<UiLayoutMainComponent> = (
+  args: UiLayoutMainComponent
+) => ({
   props: args,
   template: `
-  <mojawork-ui-layout>
+  <ui-layout-main>
      <strong header class="ui-ct-light">header</strong>
      <strong main class="ui-ct-primary">main</strong>
      <strong footer class="ui-ct-light">footer</strong>
-  </mojawork-ui-layout>`,
+  </ui-layout-main>`,
 });
 
-
-export const LayoutComponent = Template.bind({});
-LayoutComponent.args = {};
+export const Main = Template.bind({});
+Main.args = {};

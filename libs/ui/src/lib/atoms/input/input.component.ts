@@ -2,7 +2,7 @@ import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { UiInputComponentType } from './input.interface';
 
 @Component({
-  selector: 'mojawork-ui-input',
+  selector: 'ui-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
 })
