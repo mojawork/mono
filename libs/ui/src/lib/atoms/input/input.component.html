@@ -1,1 +1,29 @@
-input
+<!--
+<label *ngIf="label">{{ label }}</label>
+<input [type]="type" [placeholder]="placeholder" />
+
+<hr />
+{{ type }}
+//-->
+
+<input
+  type="text"
+  id="name"
+  name="name"
+  class="form-control"
+  required
+  minlength="4"
+  mojaworkInputForbiddenName="bobby"
+  [(ngModel)]="test"
+  #name="ngModel"
+/>
+
+<div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+  <div *ngIf="name.errors?.['required']">Name is required.</div>
+  <div *ngIf="name.errors?.['minlength']">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors?.['mojaworkInputForbiddenName']">
+    Name cannot be Bob.
+  </div>
+</div>

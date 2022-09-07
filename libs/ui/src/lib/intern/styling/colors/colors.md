@@ -1,6 +1,6 @@
 
 
-### Css Examples Colors
+### Css Styling Colors
 Shows the visual output of the defined colors
 
 ##### ct = color text

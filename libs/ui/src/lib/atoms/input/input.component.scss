@@ -1,0 +1,7 @@
+@import '../../../styles/import';
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $spacer * 0.25;
+}
