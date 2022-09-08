@@ -1,6 +1,6 @@
-@import "config/globals";
-@import "config/mediascreen";
-@import "config/fonts";
-@import "mixin/mediascreen";
-@import "mixin/layout";
-
+@import 'config/globals';
+@import 'config/mediascreen';
+@import 'config/fonts';
+@import 'mixin/global';
+@import 'mixin/mediascreen';
+@import 'mixin/layout';

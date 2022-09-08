@@ -1,16 +1,17 @@
 // ----------------------------------------------------------------------------
 // Config
-@import "import";
-@import "config/colors";
-@import "mixin/global";
-@import "mixin/mediascreen";
+@import 'import';
+@import 'config/colors';
+
+@import 'mixin/mediascreen';
 // ----------------------------------------------------------------------------
 
 html {
   scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -22,7 +23,9 @@ body {
   overflow-y: scroll;
   scroll-behavior: smooth;
 
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     font-style: $global-font-style;
     font-family: $global-font-family;
     font-weight: $global-font-weight;
@@ -45,11 +48,11 @@ body {
 
 // ----------------------------------------------------------------------------
 // imports declaration
-@import "declaration/fonts";
-@import "declaration/animation";
-@import "declaration/colors";
-@import "declaration/tags";
-@import "declaration/forms";
-@import "declaration/icons";
-@import "declaration/classes";
+@import 'declaration/fonts';
+@import 'declaration/animation';
+@import 'declaration/colors';
+@import 'declaration/tags';
+@import 'declaration/forms';
+@import 'declaration/icons';
+@import 'declaration/classes';
 // ----------------------------------------------------------------------------

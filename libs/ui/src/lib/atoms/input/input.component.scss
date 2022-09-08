@@ -1,7 +1,58 @@
 @import '../../../styles/import';
 
-:host {
+ui-input {
+  // scope only for component -  encapsulation is set to ViewEncapsulation.None
+
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: $spacer * 0.25;
+  max-width: 100%;
+
+  input {
+    width: 100%;
+  }
+
+  .ui-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(140%);
+    color: var(--ui-c-error);
+    cursor: pointer;
+  }
+
+  .ng-invalid {
+    @include ui-mixin-error;
+  }
+  .ng-untouched {
+  }
+  .ng-pristine {
+  }
+
+  .ng-untouched {
+  }
+
+  .error-message {
+    position: absolute;
+    bottom: -$spacer * 0.25;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    transform: translateY(100%);
+    background-color: var(--ui-cb-secondary);
+    border: $border-width solid var(--ui-ct-secondary);
+    border-radius: $border-radius;
+    padding: $spacer * 0.25;
+    max-height: 6rem;
+    overflow-y: auto;
+    span {
+      border-bottom: $border-width solid var(--ui-cb-thirdly);
+      padding-bottom: $spacer * 0.25;
+      margin-bottom: $spacer * 0.25;
+      &:last-of-type {
+        border: 0;
+      }
+    }
+  }
 }

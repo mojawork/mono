@@ -1,4 +1,4 @@
-export type UiInputComponentType = 'text' | 'number';
+export type UiInputPositionType = 'before' | 'after';
 
 /*
 const types = ['text', 'number'] as const;

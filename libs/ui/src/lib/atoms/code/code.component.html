@@ -1,0 +1,4 @@
+<strong class="ui-ellipsis" *ngIf="label">{{ label }}</strong>
+<code [ngClass]="{ 'no-headline': !label }">
+  <pre><ng-content></ng-content></pre>
+</code>

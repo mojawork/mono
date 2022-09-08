@@ -1,5 +1,11 @@
 @mixin ui-mixin-focus {
-  outline: none ;
+  outline: none;
   border: $border-width solid var(--ui-c-focus);
-  box-shadow: 0 0 $button-shadow *2 0 var(--ui-c-focus);
+  box-shadow: 0 0 $button-shadow * 2 0 var(--ui-c-focus);
+}
+
+@mixin ui-mixin-error {
+  outline: none;
+  border: $border-width solid var(--ui-c-error) !important;
+  box-shadow: 0 0 $button-shadow * 2 0 var(--ui-c-error);
 }

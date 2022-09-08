@@ -21,12 +21,12 @@ export function forbiddenNameValidator(nameRe: RegExp): ValidatorFn {
   providers: [
     {
       provide: NG_VALIDATORS,
-      useExisting: ForbiddenValidatorDirective,
+      useExisting: UiForbiddenValidatorDirective,
       multi: true,
     },
   ],
 })
-export class ForbiddenValidatorDirective implements Validator {
+export class UiForbiddenValidatorDirective implements Validator {
   @Input() uiInputForbiddenName = '';
 
   validate(control: AbstractControl): ValidationErrors | null {

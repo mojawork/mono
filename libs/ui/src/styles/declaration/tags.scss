@@ -3,21 +3,23 @@ body {
     display: flex;
     width: 100%;
     border-bottom: $border-width solid var(--ui-cb-thirdly);
-    margin-top: $spacer * 0.5;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: $spacer * 0.5;
-    &.ui-dotted{
+    margin: $spacer * 0.5 0;
+
+    &.ui-dotted {
       border-bottom-style: dashed;
     }
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     margin-bottom: $spacer * 0.25;
     font-weight: $font-weight-bold;
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     margin-bottom: $spacer * 0.125;
   }
 
@@ -25,7 +27,7 @@ body {
     font-weight: $font-weight-bold;
   }
 
-  a{
+  a {
     cursor: pointer;
     text-decoration: underline;
     &:hover {
@@ -44,7 +46,6 @@ body {
   }
 
   li {
-
     margin-bottom: $spacer * 0.125;
   }
 
@@ -57,7 +58,8 @@ body {
       font-weight: bold;
     }
 
-    th, td {
+    th,
+    td {
       text-align: left;
       border: $border-width solid var(--ui-cb-thirdly);
       padding: $spacer * 0.25;
@@ -95,8 +97,8 @@ body {
 
     figcaption {
       position: absolute;
-      right: - $border-width;
-      bottom: - $border-width;
+      right: -$border-width;
+      bottom: -$border-width;
       background-color: var(--ui-cb-primary);
       color: var(--ui-ct-invert);
       padding: $spacer * 0.25;
@@ -105,5 +107,17 @@ body {
       border-bottom-right-radius: $border-radius;
       font-weight: bold;
     }
+  }
+
+  code {
+    font-family: monospace;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    background-color: var(--ui-cb-secondary);
+    border: $border-width solid var(--ui-cb-thirdly);
+    padding: $spacer * 0.5;
+    border-radius: $border-radius;
+    overflow-y: scroll;
   }
 }

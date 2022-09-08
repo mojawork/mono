@@ -1,0 +1,76 @@
+<mojawork-ui-intern-header></mojawork-ui-intern-header>
+
+<section class="internal">
+  <h1>Example: template-driven form</h1>
+  <hr />
+</section>
+
+<section class="internal">
+  <form
+    class="form_step_wrapper"
+    (ngSubmit)="template.form.valid && onSubmit()"
+    #template="ngForm"
+    novalidate
+  >
+    <ui-input [label]="'Game'" [errors]="game.errors">
+      <input
+        ui-tag
+        type="text"
+        required
+        minlength="4"
+        maxlength="10"
+        uiInputForbiddenName="space-invaders"
+        name="game"
+        #game="ngModel"
+        [(ngModel)]="staticFormData.game"
+      />
+    </ui-input>
+
+    <ui-input [label]="'heightScore'" [errors]="heightScore.errors">
+      <input
+        ui-tag
+        type="number"
+        required
+        min="100"
+        max="999"
+        name="heightScore"
+        #heightScore="ngModel"
+        [(ngModel)]="staticFormData.heightScore"
+      />
+    </ui-input>
+    <button [disabled]="!template.form.valid">Submit</button>
+  </form>
+
+  <div>
+    submitted: {{ submitted }}
+    <ng-container *ngIf="submitted">
+      [{{ staticFormData.game }} - {{ staticFormData.heightScore }}]
+    </ng-container>
+  </div>
+
+  <div
+    *ngIf="heightScore.errors && (heightScore.touched || template.submitted)"
+  ></div>
+
+  <hr class="ui-dotted" />
+</section>
+
+<section class="internal">
+  <div class="output">
+    <ui-code label="form.value">
+      {{ template.form.value | json }}
+    </ui-code>
+
+    <ui-code label="form.valid">
+      {{ template.form.valid | json }}
+    </ui-code>
+
+    <ui-code label="game.errors">
+      <pre>{{ game.errors | json }} </pre>
+    </ui-code>
+
+    <ui-code label="heightScore.errors">
+      <pre>{{ heightScore.control.errors | json }} </pre>
+    </ui-code>
+  </div>
+</section>

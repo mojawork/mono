@@ -1,0 +1,18 @@
+@import '../../../../styles/import';
+
+.output {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: $spacer * 0.5;
+  height: 16rem;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  margin-bottom: $spacer * 0.5;
+  > * {
+    margin-right: $spacer;
+  }
+}

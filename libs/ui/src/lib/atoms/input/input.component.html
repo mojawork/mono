@@ -1,27 +1,23 @@
-<!--
-<label *ngIf="label">{{ label }}</label>
-<input [type]="type" [placeholder]="placeholder" />
+<label class="ui-ellipsis" *ngIf="label">{{ label }}</label>
+<div>
+  <ng-content select="[ui-tag]"></ng-content>
+  <span class="ui-icon" *ngIf="errors" (click)="showErrors = !showErrors">
+    error
+  </span>
+</div>
 
-<hr />
-{{ type }}
-//-->
-
-<input
-  type="text"
-  id="name"
-  name="name"
-  class="form-control"
-  required
-  minlength="4"
-  uiInputForbiddenName="bobby"
-  [(ngModel)]="test"
-  #name="ngModel"
-/>
-
-<div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
-  <div *ngIf="name.errors?.['required']">Name is required.</div>
-  <div *ngIf="name.errors?.['minlength']">
-    Name must be at least 4 characters long.
-  </div>
-  <div *ngIf="name.errors?.['uiInputForbiddenName']">Name cannot be Bob.</div>
+<div class="error-message" *ngIf="errors && showErrors">
+  <span *ngIf="errors?.required">
+    The input is required {{ errors?.minlength?.requiredLength }}
+  </span>
+  <span *ngIf="errors?.minlength">
+    The minimum number of characters is: {{ errors?.minlength?.requiredLength }}
+  </span>
+  <span *ngIf="errors?.maxLength">
+    The maximum number of characters is: {{ errors?.minlength?.requiredLength }}
+  </span>
+  <span *ngIf="errors?.min">
+    The minimum value is: {{ errors?.min?.min }}
+  </span>
+  <span *ngIf="errors?.uiInputForbiddenName">Input is not allowed.</span>
 </div>

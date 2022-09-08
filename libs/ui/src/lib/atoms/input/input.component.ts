@@ -1,21 +1,23 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
-import { UiInputComponentType } from './input.interface';
+import { Component, Input, OnChanges, ViewEncapsulation } from '@angular/core';
+import { UiInputPositionType } from './input.interface';
+import { ValidationErrors } from '@angular/forms';
 
 @Component({
   selector: 'ui-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
-export class UiInputComponent implements OnInit {
+export class UiInputComponent implements OnChanges {
   @Input() label: string | null = null;
-  @Input() placeholder: string | null = null;
-  @Input() type: UiInputComponentType | null = null;
-  @Input() min: number | null = null;
-  @Input() max: number | null = null;
+  @Input() errors: ValidationErrors | null = null;
+  @Input() position: UiInputPositionType | null = null;
 
-  public test = 'test';
+  public showErrors = false;
 
-  constructor(private el: ElementRef) {}
-
-  public ngOnInit(): void {}
+  public ngOnChanges() {
+    if (this.errors) {
+      this.showErrors = false;
+    }
+  }
 }
