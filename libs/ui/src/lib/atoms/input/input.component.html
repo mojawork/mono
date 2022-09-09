@@ -6,18 +6,7 @@
   </span>
 </div>
 
-<div class="error-message" *ngIf="errors && showErrors">
-  <span *ngIf="errors?.required">
-    The input is required {{ errors?.minlength?.requiredLength }}
-  </span>
-  <span *ngIf="errors?.minlength">
-    The minimum number of characters is: {{ errors?.minlength?.requiredLength }}
-  </span>
-  <span *ngIf="errors?.maxLength">
-    The maximum number of characters is: {{ errors?.minlength?.requiredLength }}
-  </span>
-  <span *ngIf="errors?.min">
-    The minimum value is: {{ errors?.min?.min }}
-  </span>
-  <span *ngIf="errors?.uiInputForbiddenName">Input is not allowed.</span>
-</div>
+<ui-electron-form-error-message
+  *ngIf="errors && showErrors"
+  [errors]="errors"
+></ui-electron-form-error-message>

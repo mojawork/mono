@@ -1,0 +1,24 @@
+<span *ngIf="errors?.required">
+  The input is required {{ errors?.minlength?.requiredLength }}
+</span>
+<span *ngIf="errors?.minLenght">
+  The minimum number of characters is: {{ errors?.minlength?.requiredLength }}
+</span>
+<span *ngIf="errors?.maxLength">
+  The maximum number of characters is: {{ errors?.minlength?.requiredLength }}
+</span>
+<span *ngIf="errors?.max"> The maximum value is: {{ errors?.min?.max }} </span>
+<span *ngIf="errors?.min"> The minimum value is: {{ errors?.min?.min }} </span>
+<span *ngIf="errors?.uiInputForbiddenName">Input is not allowed.</span>
+
+<span
+  *ngIf="
+    !errors?.required &&
+    !errors?.minlength &&
+    !errors?.maxLength &&
+    !errors?.min &&
+    !errors?.uiInputForbiddenName
+  "
+>
+  Unknown Error
+</span>

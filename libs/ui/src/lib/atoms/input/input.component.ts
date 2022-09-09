@@ -1,5 +1,4 @@
 import { Component, Input, OnChanges, ViewEncapsulation } from '@angular/core';
-import { UiInputPositionType } from './input.interface';
 import { ValidationErrors } from '@angular/forms';
 
 @Component({
@@ -11,7 +10,6 @@ import { ValidationErrors } from '@angular/forms';
 export class UiInputComponent implements OnChanges {
   @Input() label: string | null = null;
   @Input() errors: ValidationErrors | null = null;
-  @Input() position: UiInputPositionType | null = null;
 
   public showErrors = false;
 

@@ -33,7 +33,7 @@ ui-input {
   .ng-untouched {
   }
 
-  .error-message {
+  ui-electron-form-error-message {
     position: absolute;
     bottom: -$spacer * 0.25;
     display: flex;
@@ -46,6 +46,7 @@ ui-input {
     padding: $spacer * 0.25;
     max-height: 6rem;
     overflow-y: auto;
+    z-index: 1;
     span {
       border-bottom: $border-width solid var(--ui-cb-thirdly);
       padding-bottom: $spacer * 0.25;
