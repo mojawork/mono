@@ -19,7 +19,7 @@
 
 ----
 
-print validation error messages
+display validation error messages
 
 e.g:
 

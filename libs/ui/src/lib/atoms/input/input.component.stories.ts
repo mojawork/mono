@@ -1,7 +1,7 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 
 import markdown from './input.md';
-import markdown2 from '../electrons/form-error-message/form-error-message.md';
+import markdownElectron from '../electrons/form-error-message/form-error-message.md';
 import { FormsModule, NgControl, NgModel } from '@angular/forms';
 
 import { UiInputComponent } from './input.component';
@@ -13,7 +13,7 @@ export default {
   component: UiInputComponent,
 
   parameters: {
-    notes: [markdown, markdown2],
+    notes: { Introduction: markdown, 'Electron Notes': markdownElectron },
   },
   decorators: [
     moduleMetadata({

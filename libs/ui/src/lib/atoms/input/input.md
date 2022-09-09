@@ -25,7 +25,7 @@
 
 The component use:
 
-- UiElectronFormErrorMessageComponent (see notes 1)
+- UiElectronFormErrorMessageComponent (Electron Notes)
 
 ----
 
