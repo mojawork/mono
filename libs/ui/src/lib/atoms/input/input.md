@@ -4,6 +4,10 @@
 
 ----
 
+#### ng-content [default]
+
+----
+
 #### args
 
 <table>

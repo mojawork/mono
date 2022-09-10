@@ -1,4 +1,13 @@
 <strong class="ui-ellipsis" *ngIf="label">{{ label }}</strong>
 <code [ngClass]="{ 'no-headline': !label }">
-  <pre><ng-content></ng-content></pre>
+  <ng-container *ngIf="data">
+    <pre>{{ data }}</pre>
+  </ng-container>
+
+  <ng-container *ngIf="!data">
+    <pre #code [hidden]="type === 'html'">
+    <ng-content></ng-content>
+  </pre>
+    <pre *ngIf="type === 'html'">{{ html }}</pre>
+  </ng-container>
 </code>

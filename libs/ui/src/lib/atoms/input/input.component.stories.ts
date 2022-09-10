@@ -39,7 +39,6 @@ const Template: Story<UiInputComponent> = (args: UiInputComponent) => ({
     </section>
 
     <section class="internal">
-
       <ui-input [label]="'game'" [errors]="null">
         <input
           ui-tag
