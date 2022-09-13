@@ -1,7 +1,9 @@
 
 
 ### Layout Spinner
-The component can only be used once
+The component can only be used once.
+
+----
 
 ##### ui service : UiLayoutSpinnerService
 - public startSpinner()

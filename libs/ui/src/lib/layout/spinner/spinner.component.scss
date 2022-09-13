@@ -47,6 +47,7 @@ $animation-time: 0.5s;
   > * {
     margin-right: $spacer;
   }
+  border-top: $border-width solid var(--ui-cb-thirdly);
   background-color: var(--ui-cb-secondary);
 }
 
