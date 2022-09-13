@@ -42,7 +42,7 @@ const Template: Story<UiCodeComponent> = (args: UiCodeComponent) => ({
   },
 
   template: `
-    <mojawork-ui-intern-header></mojawork-ui-intern-header>
+    <ui-intern-header></ui-intern-header>
     <section class="internal">
       <h1>&lt;ui-code&gt;</h1>
       <hr />

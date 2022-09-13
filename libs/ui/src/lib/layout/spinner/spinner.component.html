@@ -1,0 +1,32 @@
+<div class="debug" *ngIf="debug">
+  <button (click)="spinnerService.startSpinner()">Start</button>
+  <button (click)="spinnerService.successSpinner()">Success</button>
+  <button (click)="spinnerService.errorSpinner('Error')">Error</button>
+  <span>
+    {{ status | json }}
+  </span>
+</div>
+
+<div class="spinner" [ngClass]="[status.show]" *ngIf="status.show !== 'none'">
+  <div class="pie-container">
+    <div class="pie-slice left">
+      <div class="ui-cb-thirdly play-1" [ngClass]="{ animation }"></div>
+    </div>
+    <div class="pie-slice right">
+      <div class="ui-cb-thirdly play-2" [ngClass]="{ animation }"></div>
+    </div>
+  </div>
+
+  <div class="pie-container">
+    <div class="pie-slice left">
+      <div class="ui-cb-main play-3" [ngClass]="{ animation }"></div>
+    </div>
+    <div class="pie-slice right">
+      <div class="ui-cb-main play-4" [ngClass]="{ animation }"></div>
+    </div>
+  </div>
+
+  <div class="error" *ngIf="status.error">
+    {{ status.error }}
+  </div>
+</div>

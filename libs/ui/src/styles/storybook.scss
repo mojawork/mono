@@ -12,6 +12,7 @@
     //padding: $spacer * 0.5;
   }
   section.internal {
+    position: relative;
     display: flex;
     flex-flow: column;
     margin: $spacer * 0.5;

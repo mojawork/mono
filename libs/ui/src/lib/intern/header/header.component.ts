@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { UiThemeTypes } from '../../../types/themes';
 
 @Component({
-  selector: 'mojawork-ui-intern-header',
+  selector: 'ui-intern-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,

@@ -1,10 +1,12 @@
+<!--
+
 <span *ngIf="errors?.required">
   The input is required {{ errors?.minlength?.requiredLength }}
 </span>
-<span *ngIf="errors?.minLenght">
+<span *ngIf="errors?.minLenght && errors?.minlength?.requiredLength">
   The minimum number of characters is: {{ errors?.minlength?.requiredLength }}
 </span>
-<span *ngIf="errors?.maxLength">
+<span *ngIf="errors?.maxLength && errors?.minlength?.requiredLength">
   The maximum number of characters is: {{ errors?.minlength?.requiredLength }}
 </span>
 <span *ngIf="errors?.max"> The maximum value is: {{ errors?.min?.max }} </span>
@@ -22,3 +24,4 @@
 >
   Unknown Error
 </span>
+//-->

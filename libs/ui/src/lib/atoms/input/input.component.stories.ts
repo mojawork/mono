@@ -19,7 +19,6 @@ export default {
     moduleMetadata({
       providers: [NgControl, NgModel],
       declarations: [UiInternHeaderComponent],
-
       imports: [FormsModule, UiAtomsModule],
     }),
   ],
@@ -32,7 +31,7 @@ const Template: Story<UiInputComponent> = (args: UiInputComponent) => ({
   },
 
   template: `
-    <mojawork-ui-intern-header></mojawork-ui-intern-header>
+    <ui-intern-header></ui-intern-header>
     <section class="internal">
       <h1>&lt;ui-input&gt;</h1>
       <hr />

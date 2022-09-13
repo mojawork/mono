@@ -1,0 +1,154 @@
+@import '../../../styles/import';
+
+$spinner-size: 26rem;
+$animation-time: 0.5s;
+
+@keyframes pie-show-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+
+@keyframes pie-show-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slice {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Defaut
+// ----------------------------------------------------------------------------
+
+.debug {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: $spacer * 0.5;
+
+  z-index: 100000;
+  > * {
+    margin-right: $spacer;
+  }
+  background-color: var(--ui-cb-secondary);
+}
+
+.spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ui-cb-main);
+  opacity: 0.8;
+
+  &.debug {
+    position: absolute;
+  }
+
+  &.showIn {
+    animation-name: pie-show-in;
+    animation-duration: $animation-time * 2.25;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    z-index: 1000;
+  }
+
+  &.showOut {
+    animation-name: pie-show-out;
+    animation-duration: $animation-time * 2.25;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .pie-container,
+  .pie-slice,
+  .animation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $spinner-size;
+    height: $spinner-size;
+    border-radius: $spinner-size * 0.5;
+  }
+
+  .animation {
+    animation-name: slice;
+    animation-duration: $animation-time;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .play-1 {
+    // animation-delay: $animation-time * 0;
+  }
+
+  .play-2 {
+    animation-delay: $animation-time * 1;
+  }
+
+  .play-3 {
+    animation-delay: $animation-time * 2;
+  }
+
+  .play-4 {
+    animation-delay: $animation-time * 3;
+  }
+
+  .pie-slice.left {
+    clip: rect(0, $spinner-size * 0.5, $spinner-size, 0);
+
+    > .animation {
+      clip: rect(0, $spinner-size * 0.5, $spinner-size, 0);
+      transform: rotate(180deg);
+    }
+  }
+
+  .pie-slice.right {
+    clip: rect(0, $spinner-size, $spinner-size, $spinner-size * 0.5);
+
+    > .animation {
+      clip: rect(0, $spinner-size, $spinner-size, $spinner-size * 0.5);
+      transform: rotate(180deg);
+    }
+  }
+
+  .error {
+    z-index: 1;
+    max-width: 80%;
+    color: var(--c-error);
+    background-color: var(--ui-cb-secondary);
+    padding: $spacer * 0.25;
+    border: $border-width solid var(--ui-cb-thirdly);
+    border-radius: $border-radius;
+  }
+}
+
+.paly {
+  animation-play-state: initial;
+}
+
+.pause {
+  animation-play-state: paused;
+}
