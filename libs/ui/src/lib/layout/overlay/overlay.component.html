@@ -1,0 +1,13 @@
+<div class="wrapper" [class.active]="animation" [class.visible]="visible">
+  <div class="direction" [ngClass]="direction">
+    <header>
+      <ng-content select="[overlay-header]"></ng-content>
+    </header>
+    <section>
+      <ng-content select="[overlay-content]"></ng-content>
+    </section>
+    <footer>
+      <ng-content select="[overlay-footer]"></ng-content>
+    </footer>
+  </div>
+</div>
