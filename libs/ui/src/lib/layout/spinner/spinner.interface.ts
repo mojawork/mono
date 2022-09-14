@@ -1,6 +1,6 @@
 type UiLayoutSpinnerViewType = 'showIn' | 'showOut' | 'none' | 'error';
 
-export interface UiLayoutSpinnerView {
+export interface UiLayoutSpinnerSettings {
   error?: string;
   show: UiLayoutSpinnerViewType;
 }

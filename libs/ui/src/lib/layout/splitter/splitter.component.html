@@ -1,0 +1,27 @@
+<div class="splitter">
+  <nav class="navigation">
+    <div class="actions">
+      <ng-content select="[splitter-header]"></ng-content>
+    </div>
+    <div class="display">
+      <button (click)="direction('right')" class="ui-icon">border_right</button>
+      <button (click)="direction('center')" class="ui-icon">
+        border_vertical
+      </button>
+      <button (click)="direction('left')" class="ui-icon">border_left</button>
+      <button (click)="direction('split')" class="ui-icon">
+        border_horizontal
+      </button>
+      <button (click)="zoom()" class="ui-icon">center_focus_strong</button>
+      <button (click)="theme()" class="ui-icon">invert_colors</button>
+    </div>
+  </nav>
+  <div class="content" [ngClass]="settings.direction">
+    <section>
+      <ng-content select="[splitter-left]"></ng-content>
+    </section>
+    <section>
+      <ng-content select="[splitter-right]"></ng-content>
+    </section>
+  </div>
+</div>

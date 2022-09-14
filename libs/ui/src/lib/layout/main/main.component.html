@@ -1,13 +1,13 @@
-<div class="ui-layout">
+<div class="ui-layout" [id]="id">
   <header>
     <header>
-      <ng-content select="[header]"></ng-content>
+      <ng-content select="[main-header]"></ng-content>
     </header>
   </header>
   <main>
-    <ng-content select="[main]"></ng-content>
+    <ng-content select="[main-content]"></ng-content>
   </main>
   <footer>
-    <ng-content select="[footer]"></ng-content>
+    <ng-content select="[main-footer]"></ng-content>
   </footer>
 </div>

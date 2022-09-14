@@ -43,7 +43,7 @@ const Template: Story<UiCodeComponent> = (args: UiCodeComponent) => ({
 
   template: `
     <ui-intern-header></ui-intern-header>
-    <section class="internal">
+    <section class="st-section">
       <h1>&lt;ui-code&gt;</h1>
       <hr />
       <ui-code label="default - data(string) " [data]="defaultData"></ui-code>

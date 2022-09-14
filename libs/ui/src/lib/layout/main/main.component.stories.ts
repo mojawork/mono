@@ -1,15 +1,12 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { UiLayoutMainComponent } from './main.component';
+import markdown from './main.md';
 
 export default {
   title: 'Layout',
   component: UiLayoutMainComponent,
   parameters: {
-    componentSubtitle: 'Layout Component.',
-    docs: {
-      page: null,
-      iframeHeight: 400,
-    },
+    notes: markdown,
   },
   decorators: [
     moduleMetadata({
@@ -24,9 +21,9 @@ const Template: Story<UiLayoutMainComponent> = (
   props: args,
   template: `
   <ui-layout-main>
-     <strong header class="ui-ct-light">header</strong>
-     <strong main class="ui-ct-primary">main</strong>
-     <strong footer class="ui-ct-light">footer</strong>
+     <strong main-header class="ui-ct-light">header</strong>
+     <strong main-content class="ui-ct-primary">main</strong>
+     <strong main-footer class="ui-ct-light">footer</strong>
   </ui-layout-main>`,
 });
 

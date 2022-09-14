@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { UiThemeTypes } from '../../../types/themes';
+import { UiStorybookCssPrefix, UiThemeTypes } from '../../../types/themes';
 
 @Component({
   selector: 'ui-intern-header',
@@ -8,7 +8,7 @@ import { UiThemeTypes } from '../../../types/themes';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class UiInternHeaderComponent implements OnInit {
-  private cssPrefix = 'ui-storybook ';
+  private cssPrefix = UiStorybookCssPrefix;
   public selectedtheme = this.cssPrefix + UiThemeTypes.light;
 
   public ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { uiIdMain } from '../../../types/ui-ids';
 
 @Component({
   selector: 'ui-layout-main',
@@ -6,4 +7,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./main.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class UiLayoutMainComponent {}
+export class UiLayoutMainComponent {
+  public id = uiIdMain;
+}

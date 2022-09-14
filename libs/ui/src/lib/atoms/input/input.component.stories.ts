@@ -32,12 +32,12 @@ const Template: Story<UiInputComponent> = (args: UiInputComponent) => ({
 
   template: `
     <ui-intern-header></ui-intern-header>
-    <section class="internal">
+    <section class="st-section">
       <h1>&lt;ui-input&gt;</h1>
       <hr />
     </section>
 
-    <section class="internal">
+    <section class="st-section">
       <ui-input [label]="'game'" [errors]="null">
         <input
           ui-tag

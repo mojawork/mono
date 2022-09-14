@@ -8,10 +8,7 @@
     padding: 0 !important;
   }
 
-  header.internal {
-    //padding: $spacer * 0.5;
-  }
-  section.internal {
+  section.st-section {
     position: relative;
     display: flex;
     flex-flow: column;
@@ -19,7 +16,7 @@
     padding: $spacer * 0.5;
   }
 
-  .float {
+  .st-float {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -28,5 +25,20 @@
       margin-right: $spacer * 0.5;
       margin-bottom: $spacer * 0.5;
     }
+
+    &.flat {
+      align-items: center;
+      > * {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .st-margin {
+    margin: $spacer * 0.25;
+  }
+
+  .st-padding {
+    padding: $spacer * 0.25;
   }
 }

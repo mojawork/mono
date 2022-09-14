@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { UiLayoutSpinnerView } from './spinner.interface';
+import { UiLayoutSpinnerSettings } from './spinner.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UiLayoutSpinnerService {
-  private STATUS = new BehaviorSubject<UiLayoutSpinnerView>({
+  private STATUS = new BehaviorSubject<UiLayoutSpinnerSettings>({
     show: 'none',
   });
 
@@ -36,7 +36,7 @@ export class UiLayoutSpinnerService {
     }
   }
 
-  public getSpinner(): Observable<UiLayoutSpinnerView> {
+  public getSpinner(): Observable<UiLayoutSpinnerSettings> {
     return this.STATUS;
   }
 }

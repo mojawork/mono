@@ -4,7 +4,6 @@ import { UiAtomsModule } from '../../atoms/atoms.module';
 import { UiInternHeaderComponent } from '../../intern/header/header.component';
 import markdown from './overlay.md';
 import { UiLayoutOverlayComponent } from './overlay.component';
-import { UILayoutOverlayDirectionsType } from './overlay.interface';
 
 export default {
   title: 'Layout',
@@ -32,10 +31,10 @@ const Template: Story<UiLayoutOverlayComponent> = (
   },
   template: `
     <ui-intern-header></ui-intern-header>
-    <section class="internal">
+    <section class="st-section">
       <h1>&lt;ui-layout-overlay&gt;</h1>
       <hr />
-      <div class="float">
+      <div class="st-float">
         <button (click)="direction='left';active=true">
             active - left
         </button>
@@ -62,7 +61,7 @@ const Template: Story<UiLayoutOverlayComponent> = (
             <hr>
             <button (click)="active=false">active = false</button>
             <hr>
-            <div class="float">
+            <div class="st-float">
                 <button (click)="active=false">cancel</button>
                 <button (click)="active=false; action()">ok</button>
             </div>

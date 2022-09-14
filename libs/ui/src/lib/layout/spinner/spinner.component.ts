@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
-import { UiLayoutSpinnerView } from './spinner.interface';
+import { UiLayoutSpinnerSettings } from './spinner.interface';
 import { interval, Subscription } from 'rxjs';
 import { UiLayoutSpinnerService } from './spinner.service';
 
@@ -10,7 +10,7 @@ import { UiLayoutSpinnerService } from './spinner.service';
   styleUrls: ['./spinner.component.scss'],
 })
 export class UILayoutSpinnerComponent implements OnInit, OnDestroy {
-  public status: UiLayoutSpinnerView = {
+  public status: UiLayoutSpinnerSettings = {
     show: 'none',
   };
   public animation = false;

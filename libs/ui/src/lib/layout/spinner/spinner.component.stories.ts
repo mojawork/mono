@@ -26,7 +26,7 @@ const Template: Story<UILayoutSpinnerComponent> = (
   props: args,
   template: `
     <ui-intern-header style="z-index:100"></ui-intern-header>
-    <section class="internal">
+    <section class="st-section">
       <h1>&lt;ui-layout-spinner&gt;</h1>
       <hr />
     </section>
