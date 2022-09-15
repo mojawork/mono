@@ -1,6 +1,6 @@
 
 
-### Layout Spinner
+### Layout: Spinner
 The component can only be used once.
 
 ----

@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { uiIdMain } from '../../../types/ui-ids';
+import { uiConfig } from '../../../types/ui-config';
 
 @Component({
   selector: 'ui-layout-main',
@@ -8,5 +8,5 @@ import { uiIdMain } from '../../../types/ui-ids';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class UiLayoutMainComponent {
-  public id = uiIdMain;
+  public config = uiConfig;
 }

@@ -1,3 +1,5 @@
+import { uiConfig } from './ui-config';
+
 export const UiStorybookCssPrefix = 'ui-storybook ';
 
 export enum UiThemeTypes {
@@ -5,7 +7,7 @@ export enum UiThemeTypes {
   dark = 'theme-dark',
 }
 
-export enum UiThemeZoomTypes {
-  zoom = 'm-zoom',
-  none = 'none',
-}
+export const UiThemeZoomTypes = {
+  zoom: `${uiConfig.mainClass} m-zoom`,
+  none: `${uiConfig.mainClass} none`,
+};

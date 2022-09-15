@@ -1,0 +1,8 @@
+@import '../../../../styles/import';
+
+.buttons {
+  display: flex;
+  > button {
+    margin-right: $spacer * 0.25;
+  }
+}

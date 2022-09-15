@@ -1,0 +1,36 @@
+<ui-layout-main>
+  <strong main-header class="ui-ct-light">
+    <!-- ng-content: main-header //-->
+    header
+    <!-- ng-content: main-header //-->
+  </strong>
+  <strong main-content class="ui-ct-primary">
+    <!-- ng-content: main-content //-->
+    <ui-layout-splitter [cssPrefix]="prefix">
+      <div splitter-header>
+        <!-- ng-content: splitter-header //-->
+        <div class="buttons">
+          <button (click)="action('event message 1')" class="ui-icon">
+            star
+          </button>
+          <button (click)="action('event message 2')" class="ui-icon">
+            favorite
+          </button>
+          <button (click)="action('event message 3')" class="ui-icon">
+            pets
+          </button>
+        </div>
+        <!-- ng-content: splitter-header //-->
+      </div>
+      <!-- ng-content: main-content //-->
+
+      <div splitter-left>left</div>
+      <div splitter-right>right</div>
+    </ui-layout-splitter>
+  </strong>
+  <strong main-footer class="ui-ct-light">
+    <!-- ng-content: main-footer //-->
+    footer
+    <!-- ng-content: main-footer //-->
+  </strong>
+</ui-layout-main>

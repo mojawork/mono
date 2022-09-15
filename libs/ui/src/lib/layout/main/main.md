@@ -1,6 +1,6 @@
 
 
-### Layout Main
+### Layout: Main
 The component can only be used once
 
 example: Example/Layout

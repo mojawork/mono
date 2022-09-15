@@ -9,6 +9,8 @@ import { UiInternHeaderComponent } from './header/header.component';
 import { UiAtomsModule } from '../atoms/atoms.module';
 import { FormsModule } from '@angular/forms';
 import { UiExampleFormTemplateDrivenComponent } from './exampels/form-template-driven/form-template-driven.component';
+import { UiExampleLayoutComponent } from './exampels/layout/layout.component';
+import { UiLayoutModule } from '../layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { UiExampleFormTemplateDrivenComponent } from './exampels/form-template-d
     UiExampleStylingIconsComponent,
     UiExampleStylingFormsComponent,
     UiExampleFormTemplateDrivenComponent,
+    UiExampleLayoutComponent,
   ],
-  imports: [CommonModule, UiAtomsModule, FormsModule],
+  imports: [CommonModule, UiLayoutModule, UiAtomsModule, FormsModule],
 })
 export class UiInternModule {}

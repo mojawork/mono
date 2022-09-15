@@ -1,0 +1,14 @@
+<header>
+  <ng-container *ngFor="let name of tabNames; let i = index">
+    <div
+      class="ui-pointer tab-selector"
+      [ngClass]="{ active: i === activeTab }"
+      (click)="active(i)"
+    >
+      {{ name }}
+    </div>
+  </ng-container>
+</header>
+<div class="content">
+  <ng-content></ng-content>
+</div>

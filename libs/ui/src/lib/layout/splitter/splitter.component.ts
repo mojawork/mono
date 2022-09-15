@@ -1,18 +1,18 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import {
   UiLayoutSplitterDirectionsTypes,
   UiLayoutSplitterSettings,
 } from './splitter.interface';
 import { UiLayoutSplitterService } from './splitter.service';
 import { UiThemeTypes, UiThemeZoomTypes } from '../../../types/themes';
-import { uiIdMain } from '../../../types/ui-ids';
+import { uiConfig } from '../../../types/ui-config';
 
 @Component({
   selector: 'ui-layout-splitter',
   templateUrl: './splitter.component.html',
   styleUrls: ['./splitter.component.scss'],
 })
-export class UiLayoutSplitterComponent implements OnInit {
+export class UiLayoutSplitterComponent implements AfterViewInit {
   private storeName = 'splitter';
 
   public settings: UiLayoutSplitterSettings = {
@@ -25,7 +25,7 @@ export class UiLayoutSplitterComponent implements OnInit {
 
   constructor(private splitterService: UiLayoutSplitterService) {}
 
-  public ngOnInit() {
+  public ngAfterViewInit() {
     const localStore = this.splitterService.getData(this.storeName);
     if (localStore) {
       this.settings = <UiLayoutSplitterSettings>localStore;
@@ -33,13 +33,17 @@ export class UiLayoutSplitterComponent implements OnInit {
       this.splitterService.setData(this.storeName, this.settings);
     }
 
+    console.log(this.settings);
+
     this.zoom(this.settings.zoom);
     this.theme(this.settings.theme);
     this.direction(this.settings.direction);
   }
 
-  public zoom(init?: UiThemeZoomTypes): void {
-    const layout = document.getElementById(uiIdMain);
+  public zoom(init?: string): void {
+    const layout = document.getElementById(uiConfig.mainID);
+
+    console.log(layout);
 
     if (layout) {
       if (init) {
@@ -52,7 +56,7 @@ export class UiLayoutSplitterComponent implements OnInit {
         layout.className = this.settings.zoom;
       }
     } else {
-      console.error('HTML - Element not found:' + uiIdMain);
+      console.error('HTML - Element not found:' + uiConfig.mainID);
     }
   }
 

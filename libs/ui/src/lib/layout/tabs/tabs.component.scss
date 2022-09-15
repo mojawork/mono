@@ -1,0 +1,58 @@
+@import '../../../styles/import';
+
+ui-layout-tabs {
+  // scope only for component -  encapsulation is set to ViewEncapsulation.None
+  display: flex;
+  flex-flow: column;
+
+  header {
+    display: flex;
+    padding: $spacer * 0.25;
+    padding-bottom: 0;
+    background-color: var(--ui-cb-secondary);
+
+    .tab-selector {
+      display: flex;
+      background-color: var(--ui-cb-thirdly);
+      padding: $spacer * 0.2;
+      border-radius: $border-radius $border-radius 0 0;
+      margin: $spacer * 0.08;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.active {
+        background-color: var(--ui-cb-secondary);
+        border: $border-width solid var(--ui-cb-thirdly);
+        border-bottom: 0;
+        transform: translateY($border-width);
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column;
+    background-color: var(--ui-cb-secondary);
+    border-top: $border-width solid var(--ui-cb-thirdly);
+    padding: $spacer * 0.25;
+
+    > * {
+      display: none;
+    }
+
+    > *.active {
+      display: flex;
+    }
+  }
+}
+
+// --- breakpoint 01 - 03 ---
+@include mediascreen($mediascreen: 'custom', $max: $ms-3-max) {
+}

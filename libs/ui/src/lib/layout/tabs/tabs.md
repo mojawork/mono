@@ -1,15 +1,13 @@
 
 
-### Layout: Splitter
+### Layout: Tabs
 The component can only be used once per view
 
 example: Example/Layout
 
 ---
 
-#### ng-content [splitter-header]
-#### ng-content [splitter-left]
-#### ng-content [splitter-right]
+#### ng-content 
 
 ----
 

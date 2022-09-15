@@ -1,4 +1,3 @@
-import { UiThemeTypes, UiThemeZoomTypes } from '../../../types/themes';
 export type UiLayoutSplitterDirectionsTypes =
   | 'left'
   | 'center'
@@ -6,7 +5,7 @@ export type UiLayoutSplitterDirectionsTypes =
   | 'split';
 
 export interface UiLayoutSplitterSettings {
-  zoom: UiThemeZoomTypes;
-  theme: UiThemeTypes | string;
+  zoom: string;
+  theme: string;
   direction: UiLayoutSplitterDirectionsTypes;
 }
