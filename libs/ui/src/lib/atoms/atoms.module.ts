@@ -6,6 +6,7 @@ import { UiInputComponent } from './input/input.component';
 import { UiCodeComponent } from './code/code.component';
 import { UiElectronFormErrorMessageComponent } from './_electrons/form-error-message/form-error-message.component';
 import { UiColorComponent } from './color/color.component';
+import { UiBuzzerComponent } from './buzzer/buzzer.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -14,12 +15,14 @@ import { UiColorComponent } from './color/color.component';
     UiInputComponent,
     UiCodeComponent,
     UiColorComponent,
+    UiBuzzerComponent,
     UiElectronFormErrorMessageComponent,
   ],
   exports: [
     UiInputComponent,
     UiCodeComponent,
     UiColorComponent,
+    UiBuzzerComponent,
     UiForbiddenValidatorDirective,
   ],
 })

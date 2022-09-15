@@ -62,7 +62,7 @@ const Template: Story<UiColorComponent> = (args: UiColorComponent) => ({
     <section class="st-section">
         <h3>static</h3>
         <div class="st-grid" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr">
-          <ui-color *ngFor="let item of colors" cssClass="animate" [color]="item">
+          <ui-color *ngFor="let item of colors" [color]="item">
             <div class="st-margin st-padding">
               <strong>color: {{item}}</strong>
             </div>
