@@ -24,8 +24,23 @@
       </div>
       <!-- ng-content: main-content //-->
 
-      <div splitter-left>left</div>
-      <div splitter-right>right</div>
+      <div splitter-left>
+        <ui-layout-tabs
+          [tabNames]="['Turrican', 'Pacman', 'Bobble Bubble', 'Double Dragon']"
+        >
+          <!-- ng-content //-->
+          <section>Turrican Score: 24</section>
+          <section>Pacman Score: 101010001</section>
+          <section>Bobble Bubble Score: #ff00ff</section>
+          <section>Double Dragon Score: XXXX</section>
+          <!-- ng-content //-->
+        </ui-layout-tabs>
+      </div>
+      <div splitter-right>
+        <ui-code label="ng-content - type html" type="html">
+          <h1>headline</h1>
+        </ui-code>
+      </div>
     </ui-layout-splitter>
   </strong>
   <strong main-footer class="ui-ct-light">

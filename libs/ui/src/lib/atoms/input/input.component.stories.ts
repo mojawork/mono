@@ -1,7 +1,7 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 
 import markdown from './input.md';
-import markdownElectron from '../electrons/form-error-message/form-error-message.md';
+import markdownElectron from '../_electrons/form-error-message/form-error-message.md';
 import { FormsModule, NgControl, NgModel } from '@angular/forms';
 
 import { UiInputComponent } from './input.component';

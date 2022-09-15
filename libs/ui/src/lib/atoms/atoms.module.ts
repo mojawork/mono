@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { UiForbiddenValidatorDirective } from './input/input.validator.directive';
 import { UiInputComponent } from './input/input.component';
 import { UiCodeComponent } from './code/code.component';
-import { UiElectronFormErrorMessageComponent } from './electrons/form-error-message/form-error-message.component';
+import { UiElectronFormErrorMessageComponent } from './_electrons/form-error-message/form-error-message.component';
+import { UiColorComponent } from './color/color.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -12,8 +13,14 @@ import { UiElectronFormErrorMessageComponent } from './electrons/form-error-mess
     UiForbiddenValidatorDirective,
     UiInputComponent,
     UiCodeComponent,
+    UiColorComponent,
     UiElectronFormErrorMessageComponent,
   ],
-  exports: [UiInputComponent, UiCodeComponent, UiForbiddenValidatorDirective],
+  exports: [
+    UiInputComponent,
+    UiCodeComponent,
+    UiColorComponent,
+    UiForbiddenValidatorDirective,
+  ],
 })
 export class UiAtomsModule {}

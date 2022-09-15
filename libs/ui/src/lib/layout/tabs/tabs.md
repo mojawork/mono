@@ -27,10 +27,17 @@ handle data from localStorage
 <tr>
   <th>@Input</th>
   <th>type</th>
+  <th>default</th>
 </tr>
 <tr>
-  <td>cssPrefix</td>
-  <td>string</td>
+  <td>tabNames</td>
+  <td>[string]</td>
+  <td></td>
+</tr>
+<tr>
+  <td>activeTab</td>
+  <td>number</td>
+  <td>0</td>
 </tr>
 </table>
 

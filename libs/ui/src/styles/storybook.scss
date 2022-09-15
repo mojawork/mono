@@ -16,6 +16,12 @@
     padding: $spacer * 0.5;
   }
 
+  .st-grid {
+    display: grid;
+    grid-gap: $spacer * 0.5;
+    grid-template-columns: 1fr;
+  }
+
   .st-float {
     display: flex;
     flex-flow: row wrap;

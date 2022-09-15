@@ -52,7 +52,7 @@ const Template: Story<UiLayoutTabsComponent> = (
 
       <h3>costume tab labels</h3>
 
-      <ui-layout-tabs [tabNames]="['Turrican','Pacman','Bobble Bubble', 'Double Dragon']">
+      <ui-layout-tabs [activeTab]="2" [tabNames]="['Turrican','Pacman','Bobble Bubble', 'Double Dragon']">
         <section>Turrican Score: 24</section>
         <section>Pacman Score: 101010001</section>
         <section>Bobble Bubble Score: #ff00ff</section>

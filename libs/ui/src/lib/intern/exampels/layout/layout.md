@@ -18,6 +18,16 @@ The example uses the Ui components:
 
 ---
 
+#### UiLayoutTabsComponent
+- ng-content
+
+---
+
+#### UiCodeComponent
+- ng-content
+
+---
+
 For more information visit the website :
-[Angular Docs](https://angular.io/guide/forms)
+[Angular Docs](https://angular.io/guide/content-projection)
 

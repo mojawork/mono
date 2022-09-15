@@ -32,9 +32,6 @@ export class UiLayoutSplitterComponent implements AfterViewInit {
     } else {
       this.splitterService.setData(this.storeName, this.settings);
     }
-
-    console.log(this.settings);
-
     this.zoom(this.settings.zoom);
     this.theme(this.settings.theme);
     this.direction(this.settings.direction);
@@ -42,9 +39,6 @@ export class UiLayoutSplitterComponent implements AfterViewInit {
 
   public zoom(init?: string): void {
     const layout = document.getElementById(uiConfig.mainID);
-
-    console.log(layout);
-
     if (layout) {
       if (init) {
         layout.className = init;

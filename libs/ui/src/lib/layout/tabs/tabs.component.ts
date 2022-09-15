@@ -15,7 +15,7 @@ import { filter as _filter } from 'lodash';
 })
 export class UiLayoutTabsComponent implements OnInit {
   @Input() public tabNames: Array<string> = [];
-  public activeTab = 0;
+  @Input() public activeTab = 0;
 
   constructor(private el: ElementRef) {}
 

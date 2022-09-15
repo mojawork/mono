@@ -6,6 +6,7 @@ header {
   position: sticky;
   top: 0;
   border-bottom: $border-width solid var(--ui-cb-thirdly);
+  z-index: 1000;
   div {
     display: flex;
     flex-flow: row;

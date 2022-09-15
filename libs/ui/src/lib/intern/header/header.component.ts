@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { UiStorybookCssPrefix, UiThemeTypes } from '../../../types/themes';
 
 @Component({
@@ -7,13 +7,9 @@ import { UiStorybookCssPrefix, UiThemeTypes } from '../../../types/themes';
   styleUrls: ['./header.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class UiInternHeaderComponent implements OnInit {
+export class UiInternHeaderComponent {
   private cssPrefix = UiStorybookCssPrefix;
   public selectedtheme = this.cssPrefix + UiThemeTypes.light;
-
-  public ngOnInit(): void {
-    console.log('start examples');
-  }
 
   public theme(init?: UiThemeTypes) {
     const body: HTMLElement = document.body;
