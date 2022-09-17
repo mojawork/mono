@@ -56,4 +56,9 @@ body {
       height: $icon-size * 4;
     }
   }
+
+  button > .ui-icon {
+    margin: 0;
+    padding: 0;
+  }
 }

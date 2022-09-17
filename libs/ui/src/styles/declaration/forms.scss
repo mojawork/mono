@@ -62,27 +62,41 @@ body {
 
   button.ui-success {
     color: var(--ui-ct-invert);
+    .ui-icon {
+      color: var(--ui-ct-invert);
+    }
     background-color: var(--ui-c-success);
   }
 
   button.ui-focus {
     color: var(--ui-ct-invert);
+    .ui-icon {
+      color: var(--ui-ct-invert);
+    }
     background-color: var(--ui-c-focus);
   }
 
   button.ui-danger {
     color: var(--ui-ct-invert);
+    .ui-icon {
+      color: var(--ui-ct-invert);
+    }
     background-color: var(--ui-c-error);
   }
 
   button.ui-warning {
     color: var(--ui-ct-invert);
+    .ui-icon {
+      color: var(--ui-ct-invert);
+    }
     background-color: var(--ui-c-warning);
   }
 
   button:disabled {
     background-color: var(--ui-c-disabeld);
-    color: var(--ui-ct-disabeld);
+    .ui-icon {
+      color: var(--ui-ct-disabeld);
+    }
     cursor: default;
     box-shadow: 0 0 0 0;
   }

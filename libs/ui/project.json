@@ -1,7 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/ui/src",
-  "prefix": "mojawork",
+  "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

@@ -9,7 +9,7 @@ ui-layout-tabs {
     display: flex;
     padding: $spacer * 0.25;
     padding-bottom: 0;
-    background-color: var(--ui-cb-secondary);
+    // background-color: var(--ui-cb-secondary);
 
     .tab-selector {
       display: flex;
@@ -40,7 +40,8 @@ ui-layout-tabs {
     display: flex;
     flex-flow: column;
     background-color: var(--ui-cb-secondary);
-    border-top: $border-width solid var(--ui-cb-thirdly);
+    border: $border-width solid var(--ui-cb-thirdly);
+    border-radius: $border-radius;
     padding: $spacer * 0.25;
 
     > * {

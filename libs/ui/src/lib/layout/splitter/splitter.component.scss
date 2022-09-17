@@ -40,7 +40,7 @@
     grid-gap: $spacer * 0.25;
     transition: $time ease-in;
     > section {
-      background-color: var(--ui-cb-secondary);
+      // background-color: var(--ui-cb-secondary);
       border-radius: $border-radius;
       padding: $spacer * 0.25;
     }
